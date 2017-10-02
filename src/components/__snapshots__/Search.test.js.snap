@@ -4,9 +4,7 @@ exports[`renders without crashing 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Search
-    search={[Function]}
-  />,
+  Symbol(enzyme.__unrendered__): <Search />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -22,17 +20,15 @@ ShallowWrapper {
       "children": <form
         onSubmit={[Function]}
       >
-        <div>
-          <input
-            onChange={[Function]}
-            type="text"
-          />
-          <button
-            type="submit"
-          >
-             Search
-          </button>
-        </div>
+        <input
+          onChange={[Function]}
+          type="text"
+        />
+        <button
+          type="submit"
+        >
+          Search
+        </button>
       </form>,
       "className": "Search",
     },
@@ -42,7 +38,59 @@ ShallowWrapper {
       "key": null,
       "nodeType": "host",
       "props": Object {
-        "children": <div>
+        "children": Array [
+          <input
+            onChange={[Function]}
+            type="text"
+          />,
+          <button
+            type="submit"
+          >
+            Search
+          </button>,
+        ],
+        "onSubmit": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "onChange": [Function],
+            "type": "text",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "input",
+        },
+        Object {
+          "instance": null,
+          "key": null,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Search",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "Search",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": null,
+      "nodeType": "host",
+      "props": Object {
+        "children": <form
+          onSubmit={[Function]}
+        >
           <input
             onChange={[Function]}
             type="text"
@@ -50,10 +98,10 @@ ShallowWrapper {
           <button
             type="submit"
           >
-             Search
+            Search
           </button>
-        </div>,
-        "onSubmit": [Function],
+        </form>,
+        "className": "Search",
       },
       "ref": null,
       "rendered": Object {
@@ -69,9 +117,10 @@ ShallowWrapper {
             <button
               type="submit"
             >
-               Search
+              Search
             </button>,
           ],
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
@@ -92,109 +141,14 @@ ShallowWrapper {
             "key": null,
             "nodeType": "host",
             "props": Object {
-              "children": " Search",
+              "children": "Search",
               "type": "submit",
             },
-            "ref": "searchButton",
-            "rendered": " Search",
+            "ref": null,
+            "rendered": "Search",
             "type": "button",
           },
         ],
-        "type": "div",
-      },
-      "type": "form",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": null,
-      "nodeType": "host",
-      "props": Object {
-        "children": <form
-          onSubmit={[Function]}
-        >
-          <div>
-            <input
-              onChange={[Function]}
-              type="text"
-            />
-            <button
-              type="submit"
-            >
-               Search
-            </button>
-          </div>
-        </form>,
-        "className": "Search",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": null,
-        "nodeType": "host",
-        "props": Object {
-          "children": <div>
-            <input
-              onChange={[Function]}
-              type="text"
-            />
-            <button
-              type="submit"
-            >
-               Search
-            </button>
-          </div>,
-          "onSubmit": [Function],
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": null,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <input
-                onChange={[Function]}
-                type="text"
-              />,
-              <button
-                type="submit"
-              >
-                 Search
-              </button>,
-            ],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "type": "text",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": null,
-              "nodeType": "host",
-              "props": Object {
-                "children": " Search",
-                "type": "submit",
-              },
-              "ref": "searchButton",
-              "rendered": " Search",
-              "type": "button",
-            },
-          ],
-          "type": "div",
-        },
         "type": "form",
       },
       "type": "div",
